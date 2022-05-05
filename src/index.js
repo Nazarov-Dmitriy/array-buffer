@@ -1,1 +1,1 @@
-import { ArrayBufferConverter } from "./js/ArrayBufferConverter.js";
+import ArrayBufferConverter from './js/ArrayBufferConverter';

@@ -1,4 +1,3 @@
-// TODO: write your code here
 export default class ArrayBufferConverter {
   constructor() {
     this.buffer;
@@ -13,16 +12,9 @@ export default class ArrayBufferConverter {
     this.buffer = bufferView;
   }
 
-
   toString() {
-    let str = '';
-    for (let i = 0; i < this.buffer.length; i++) {
-      str += String.fromCharCode(this.buffer[i])
-    }
-    return str
+    return this.buffer.reduce(function(str, current) {
+      return str + String.fromCharCode(current);
+    }, '');
   }
 }
-
-
-
-
